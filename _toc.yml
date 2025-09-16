@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+format: jb-book
+root: intro.md
+parts:
+  - caption: Course Notes
+    chapters:
+      - file: materials/tutorials/000_Introduction.md
+      - file: materials/tutorials/005_Setting_Up.md
+  - caption: Lectures
+    chapters:
+      - file: materials/wrappers/000_Introduction.md
+      - file: materials/wrappers/005_wrapper.md
