@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# 005 Setting Up
+# 005 Getting Started
 
 > COM6018
 
