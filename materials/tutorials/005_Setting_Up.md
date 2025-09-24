@@ -109,7 +109,7 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 Use `irm` to download the script and execute it with `iex`, as follows:
 
 ```bash
-powershell -ExecutionPolicy ByPass -c "irm <https://astral.sh/uv/install.ps1> | iex"
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 Changing the execution policy allows running a script from the internet.
@@ -153,12 +153,34 @@ cd getting_started
 uv init
 ```
 
-This makes a new directory and sets up `uv` to manage the project. If you run `ls -a` you should see the following files:
+This makes a new directory and sets up `uv` to manage the project. To see what `uv` has done, you can list the files, including ``hidden` files by running.
+
+::::{tab-set}
+:::{tab-item} macOS and Linux
 
 ```bash
-❯ ls -a
-.git  .python-version pyproject.toml
-.gitignore main.py  README.md
+ls -a
+```
+
+:::
+:::{tab-item} Windows
+
+```bash
+ls -Force -Name
+```
+
+:::
+::::
+
+This should output something like,
+
+```none
+.git
+.gitignore
+.python-version
+pyproject.toml
+main.py
+README.md
 ```
 
 The most important of these is the `pyproject.toml` file. This is where `uv` will keep track of the Python version and the libraries that you install for this project. You can also edit it directly to add some project information.
@@ -197,15 +219,42 @@ Activate with: source .venv/bin/activate
 
 The command has created a new virtual environment for the project using Python 3.12. The details of the environment are stored in a hidden directory called `.venv`.
 
-Before you can use the virtual environment, you need to activate it. You can do this by running the command that `uv` has printed out, e.g. for macOS or Linux:
+Before you can use the virtual environment, you need to activate it. You can do this by running the command that `uv` has printed out, this will probably be:
+
+:::::{tab-set}
+::::{tab-item} macOS and Linux
 
 ```bash
 source .venv/bin/activate
 ```
 
-:::{warning}
-The activation command depends on your operating system. So copy the command that `uv` has printed out for you.
+::::
+::::{tab-item} Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+:::{important}
+You might find that the above command generates an error like this:
+
+```none
+File C:\path\to\your\project\.venv\Scripts\Activate.ps1 cannot be loaded
+because running scripts is disabled on this system. For more information,
+see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+```
+
+If you see this it just means that your PowerShell is set to not allow scripts to be run. You can change this by running the command:
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+You will be asked to confirm the change, type `Y` and press enter. You should now be able to run the activate command.
 :::
+
+::::
+:::::
 
 We can check that the virtual environment is working correctly by checking the version of Python:
 
@@ -217,9 +266,14 @@ You should see that it is Python 3.12.x.
 
 You can also check that the Python executable is the one in the virtual environment by running:
 
-```bash
+::::{tab-set}
+:::{tab-item} macOS and Linux
 which python
-```
+:::
+:::{tab-item} Windows
+where python
+:::
+::::
 
 This should print out a path that ends with `.venv/bin/python` (or `.venv\Scripts\python.exe` on Windows).
 
@@ -283,9 +337,14 @@ Git has a lot of powerful features that allow you to manage code development and
 
 To make a new git repository for a project, you would normally run the command `git init` in the project directory. However, if you have already run `uv init` to set up the project, then `uv` will have already created a git repository for you. You can check this by running the command:
 
-```bash
+::::{tab-set}
+:::{tab-item} macOS and Linux
 ls -a
-```
+:::
+:::{tab-item} Windows
+ls -Force -Name
+:::
+::::
 
 You should see a directory called `.git`. This is where `git` stores all the information about the repository.
 
