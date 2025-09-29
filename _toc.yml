@@ -7,7 +7,11 @@ parts:
     chapters:
       - file: materials/tutorials/000_Introduction.md
       - file: materials/tutorials/005_Setting_Up.md
+      - file: materials/tutorials/010_Introducing_Python.ipynb
+      - file: materials/tutorials/015_Further_Python.ipynb
   - caption: Lectures
     chapters:
       - file: materials/wrappers/000_Introduction.md
       - file: materials/wrappers/005_wrapper.md
+      - file: materials/wrappers/010_wrapper.md
+      - file: materials/wrappers/015_wrapper.md
