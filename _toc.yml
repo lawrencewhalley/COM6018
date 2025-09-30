@@ -15,6 +15,10 @@ parts:
       - file: materials/wrappers/005_wrapper.md
       - file: materials/wrappers/010_wrapper.md
       - file: materials/wrappers/015_wrapper.md
+  - caption: Lab Introductions
+    chapters:
+      - file: materials/wrappers/000_lab_intros.md
+      - file: materials/wrappers/010_lab_intro_wrapper.md
   - caption: Lab Classes
     chapters:
       - file: materials/labs/000_Introduction.md
