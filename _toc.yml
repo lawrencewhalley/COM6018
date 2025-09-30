@@ -15,3 +15,7 @@ parts:
       - file: materials/wrappers/005_wrapper.md
       - file: materials/wrappers/010_wrapper.md
       - file: materials/wrappers/015_wrapper.md
+  - caption: Lab Classes
+    chapters:
+      - file: materials/labs/000_Introduction.md
+      - file: materials/labs/010_python_intro.ipynb
