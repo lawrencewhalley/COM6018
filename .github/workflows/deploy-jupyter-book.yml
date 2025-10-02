@@ -41,6 +41,12 @@ jobs:
           else
             echo "No materials/lectures directory, skipping copy"
           fi
+          if [ -d "materials/lab_intros" ]; then
+            mkdir -p _build/html/materials
+            cp -r materials/lab_intros _build/html/materials
+          else
+            echo "No materials/lab_intros directory, skipping copy"
+          fi
 
       # Step 6: Deploy to gh-pages branch
       - name: Deploy to GitHub Pages
