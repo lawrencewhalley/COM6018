@@ -10,6 +10,7 @@ parts:
       - file: materials/tutorials/010_Introducing_Python.ipynb
       - file: materials/tutorials/015_Further_Python.ipynb
       - file: materials/tutorials/020_Reading_Data.ipynb
+      - file: materials/tutorials/025_Obtaining_Data_via_an_API.ipynb
   - caption: Lectures
     chapters:
       - file: materials/wrappers/000_Introduction.md
@@ -31,3 +32,4 @@ parts:
     chapters:
       - file: materials/solutions/000_Introduction.md
       - file: materials/solutions/010_python_intro.ipynb
+      - file: materials/solutions/020_reading_data.ipynb
