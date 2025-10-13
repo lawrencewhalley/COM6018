@@ -20,6 +20,7 @@ parts:
       - file: materials/wrappers/010_wrapper.md
       - file: materials/wrappers/015_wrapper.md
       - file: materials/wrappers/020_wrapper.md
+      - file: materials/wrappers/030_wrapper.md
   - caption: Lab Introductions
     chapters:
       - file: materials/wrappers/000_lab_intros.md
