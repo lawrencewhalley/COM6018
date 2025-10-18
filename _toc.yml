@@ -13,6 +13,7 @@ parts:
       - file: materials/tutorials/025_Obtaining_Data_via_an_API.ipynb
       - file: materials/tutorials/030_Introducing_Numpy.ipynb
       - file: materials/tutorials/035_Some_Common_Problems.ipynb
+      - file: materials/tutorials/040_Introducing_Pandas.ipynb
   - caption: Lectures
     chapters:
       - file: materials/wrappers/000_Introduction.md
