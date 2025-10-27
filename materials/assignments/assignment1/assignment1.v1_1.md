@@ -4,7 +4,8 @@
 
 **Due:** 15:00, Friday 7th November 2025
 
-Document history: v1.0 (24th Oct 2025), v1.1 (27th Oct 2025: added Section 3 describing the data).)
+Document history: v1.0 (24th Oct 2025), v1.1 (27th Oct 2025: added Section 3 describing the data).
+
 ---
 
 <!--
@@ -112,7 +113,7 @@ In order to make the required plots, you will first need to load these datasets 
 
 This DataFrame will then be passed to each of your plotting functions.
 
---
+---
 
 ## 4. Workflow & Report Generation
 
