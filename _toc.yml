@@ -33,6 +33,7 @@ parts:
       - file: materials/wrappers/020_lab_intro_wrapper.md
       - file: materials/wrappers/030_lab_intro_wrapper.md
       - file: materials/wrappers/040_lab_intro_wrapper.md
+      - file: materials/wrappers/050_lab_intro_wrapper.md
   - caption: Lab Classes
     chapters:
       - file: materials/labs/000_Introduction.md
@@ -40,6 +41,7 @@ parts:
       - file: materials/labs/020_reading_data.ipynb
       - file: materials/labs/030_introducing_numpy.ipynb
       - file: materials/labs/040_working_with_pandas.ipynb
+      - file: materials/labs/050_using_matplotlib.ipynb
   - caption: Solutions
     chapters:
       - file: materials/solutions/000_Introduction.md
