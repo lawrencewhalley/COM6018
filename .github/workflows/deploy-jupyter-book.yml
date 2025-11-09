@@ -29,8 +29,8 @@ jobs:
       # Step 4: Clean and build the Jupyter Book
       - name: Build Jupyter Book
         run: |
-          jb clean .
-          jb build . --keep-going
+          jupyter-book clean .
+          jupyter-book build . --keep-going
 
       # Step 5: Copy additional materials (lectures, etc.)
       - name: Copy additional materials
