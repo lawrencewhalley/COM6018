@@ -20,11 +20,12 @@ only_build_toc_files: true # Auto-exclude files not in the toc
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: auto
+  execute_notebooks: "force"
   exclude_patterns:
     - "materials/labs/*"
     - "*.md"
   allow_errors: true
+  halt_on_error: false
   stderr_output: error # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
 
 # Parse and render settings
