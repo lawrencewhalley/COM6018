@@ -18,6 +18,7 @@ parts:
       - file: materials/tutorials/050_Introducing_Matplotlib.ipynb
       - file: materials/tutorials/070_Introducing_Scikit_Learn.ipynb
       - file: materials/tutorials/080_Classification_with_Scikit_Learn.ipynb
+      - file: materials/tutorials/090_Curve_Fitting_with_Scikit_Learn.ipynb
   - caption: Lectures
     chapters:
       - file: materials/wrappers/000_Introduction.md
@@ -30,6 +31,7 @@ parts:
       - file: materials/wrappers/050_wrapper.md
       - file: materials/wrappers/070_wrapper.md
       - file: materials/wrappers/080_wrapper.md
+      - file: materials/wrappers/090_wrapper.md
   - caption: Lab Introductions
     chapters:
       - file: materials/wrappers/000_lab_intros.md
@@ -40,6 +42,8 @@ parts:
       - file: materials/wrappers/050_lab_intro_wrapper.md
       - file: materials/wrappers/070_lab_intro_wrapper.md
       - file: materials/wrappers/080_lab_intro_wrapper.md
+      - file: materials/wrappers/090_lab_intro_wrapper.md
+      - file: materials/wrappers/090_lab_intro_wrapper.md
   - caption: Lab Classes
     chapters:
       - file: materials/labs/000_Introduction.md
@@ -50,6 +54,7 @@ parts:
       - file: materials/labs/050_using_matplotlib.ipynb
       - file: materials/labs/070_introducing_scikit_learn.ipynb
       - file: materials/labs/080_classification_with_scikit_learn.ipynb
+      - file: materials/labs/090_curve_fitting_with_scikit_learn.ipynb
   - caption: Solutions
     chapters:
       - file: materials/solutions/000_Introduction.md
